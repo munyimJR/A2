@@ -131,7 +131,7 @@ header .contact:hover {
 }
 
 .hero-image {
-    min-width: 300px;
+    min-width: 350px;
     justify-content: center;
 }
 
@@ -179,10 +179,10 @@ header .contact:hover {
 }
 
 .curriculum .card {
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -287,7 +287,7 @@ header .contact:hover {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 20px;
-    align-items: start;
+    /* align-items: start; */
 }
 
 .small-cards {
@@ -487,13 +487,14 @@ footer {
         margin: 20px auto;
     }
 
-    .stories-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .stories-container .story-card.large {
         display: none;
+
     }
+
+   .small-cards{
+    width: 360px;
+   }
 
     footer .foot-container {
         display: grid;
