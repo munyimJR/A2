@@ -75,6 +75,38 @@ header .contact:hover {
     background-color: #e06922;
 }
 
+.topnav {
+    background-color: #322222;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+/* .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+
+.topnav .icon {
+    display: none;
+}
+
+
+
+
 
 
 
@@ -378,6 +410,8 @@ footer {
     width: 72px;
     height: 65px;
     margin: 0;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .footer-description {
@@ -419,9 +453,19 @@ footer {
 
 
 @media (max-width: 576px) {
-    header nav {
+    header nav a {
         display: none;
     }
+
+    header .contact {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
 
     .hero-flex {
         flex-direction: column-reverse;
