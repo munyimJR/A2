@@ -36,11 +36,10 @@ header .logo img {
 header nav a {
     text-decoration: none;
     margin: 0 15px;
-    /* color: #333; */
     font-weight: 500;
 }
 .sky-blue{
-    color: skyblue;
+    color: #01ACFD;
 }
 .orange{
     color: orange;
@@ -74,6 +73,7 @@ header .contact:hover {
     justify-content: space-between;
     align-items: center;
     padding: 60px 10%;
+    gap: 50px;
 }
 
 .hero-content {
@@ -83,18 +83,21 @@ header .contact:hover {
 
 }
 
+.span1{
+    color: orange;
+}
+.span2 {
+    color: #01ACFD;
+}
+
 .hero-content h1 {
     font-size: 2.5rem;
     color: #333;
 }
 
-.hero-content h1 span {
-    color: #007BFF;
-}
-
 .hero-content p {
     margin: 20px 0;
-    color: #555;
+    color: #111111;
 }
 
 .hero-image {
@@ -109,7 +112,7 @@ header .contact:hover {
 }
 
 .hero-content .Enroll-btn {
-    background-color: #333;
+    background-color:black;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -117,7 +120,7 @@ header .contact:hover {
 }
 
 .hero-content .Enroll-btn:hover {
-    background-color: #444;
+    background-color: #272525;
 }
 
 .Standard {
