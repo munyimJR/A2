@@ -74,7 +74,7 @@ header .contact {
 header .contact:hover {
     background-color: #e06922;
 }
-/* google help */
+
 .topnav {
     color: #000;
     overflow: hidden;
@@ -84,7 +84,7 @@ header .contact:hover {
 .topnav a {
     float: left;
     color: black;
-    padding: 6px 6px; 
+    padding: 6px 6px;
 }
 
 .topnav a:hover {
@@ -200,6 +200,8 @@ header .contact:hover {
 
 .card-link {
     text-decoration: none;
+    /* margin-top:99%; */
+    /* align-items:flex-end; */
     margin-bottom: 5px;
 }
 
@@ -285,6 +287,9 @@ header .contact:hover {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-items: start; */
 }
 
 .small-cards {
@@ -297,14 +302,19 @@ header .contact:hover {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+
+    /* position:static; */
 }
 
 .story-card.large {
     height: 100%;
 }
 
+.story-image {
+    position: relative;
+    width: 100%;
+}
 
 .story-image img {
     display: block;
@@ -320,9 +330,8 @@ header .contact:hover {
     padding: 5px 10px;
     font-size: 0.9rem;
     font-weight: bold;
-    border-radius: 20px;
-    position: relative;
-    top: -15;
+    font-size: small;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -434,9 +443,10 @@ footer {
 
 
 @media (max-width: 576px) {
-    header{
+    header {
         padding: 20px 10%;
     }
+
     header nav a {
         display: none;
     }
@@ -485,6 +495,10 @@ footer {
 
     }
 
+    /* .small-cards{
+    max-width: 100%;
+
+   }  */
     footer .foot-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
