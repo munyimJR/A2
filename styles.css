@@ -1,0 +1,376 @@
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: url('./assets/bg.png');
+
+}
+
+header {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #ff7f27;
+}
+
+header .contact {
+    background-color: #ff7f27;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header .contact:hover {
+    background-color: #e06922;
+}
+
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    text-align: left;
+    margin-top: 120;
+    margin-bottom: 120;
+
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-content h1 span {
+    color: #007BFF;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.hero-image {
+    min-width: 300px;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 0 auto;
+    /* z-index: 1; */
+}
+
+.hero-content .Enroll-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-content .Enroll-btn:hover {
+    background-color: #444;
+}
+
+.Standard {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.Standard h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.curriculum {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.curriculum .card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum .card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.curriculum .card h3 {
+    margin-bottom: 10px;
+}
+
+/* tir-btn took help of google*/
+.tir-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px 30px; */
+    gap: 5px;
+    padding: 60px 10%;
+}
+
+.tir {
+    width: 50px;
+    height: 50px;
+    background-color: #FFA500;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.left::before {
+    content: "<";
+    font-size: 20px;
+    color: white;
+}
+
+.right::before {
+    content: ">";
+    font-size: 20px;
+    color: white;
+}
+
+
+
+/* stories */
+
+.stories {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(254, 163, 1, 0));
+    color: white;
+}
+
+.story-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.stories-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.large-card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.large-card .story-content {
+    padding: 15px;
+}
+
+.large-card .story-date {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.small-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.story-image img {
+    width: 100%;
+    display: block;
+    border-bottom: 2px;
+}
+
+.story-content {
+    padding: 10px;
+}
+
+.story-date {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.story-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.story-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.large-card .story-content {
+    text-align: left;
+}
+
+/* View Button */
+.view-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #372424;
+}
+
+/* Footer */
+footer {
+    background-color: #01ACFD;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nicher {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.nicher h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.nicher ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nicher ul li {
+    margin-bottom: 8px;
+}
+
+.nicher ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    footer .columns {
+        flex-direction: column;
+        text-align: center;
+    }
+}
