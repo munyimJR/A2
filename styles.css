@@ -36,11 +36,23 @@ header .logo img {
 header nav a {
     text-decoration: none;
     margin: 0 15px;
-    color: #333;
+    /* color: #333; */
     font-weight: 500;
 }
+.sky-blue{
+    color: skyblue;
+}
+.orange{
+    color: orange;
+}
+.akasi{
+    color: #05D4DF;
+}
+.beguni{
+    color: #5D58EF;
+}
 
-header nav a:hover {
+header nav :hover {
     color: #ff7f27;
 }
 
@@ -302,9 +314,10 @@ footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;
+    /* max-width: 1200px; */
+
+    margin: 0 auto; 
 }
 
 .nicher {
@@ -322,14 +335,16 @@ footer .container {
 }
 
 .footer-logo img {
-    width: 50px;
-    height: 50px;
+    width: 72px;
+    height: 65px;
+    margin: 0;
 }
 
 .footer-description {
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     line-height: 1.6;
+    color: #FFFFFF;
 }
 
 .nicher h4 {
