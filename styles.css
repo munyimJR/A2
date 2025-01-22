@@ -246,19 +246,33 @@ header .contact:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* stories */
 
-.stories {
+/* .stories {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(254, 163, 1, 0));
     color: white;
-    
 }
 
 .story-title {
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
 .stories-container {
@@ -341,8 +355,6 @@ header .contact:hover {
 .large-card .story-content {
     text-align: left;
 }
-
-/* View Button */
 .view-btn {
     background-color: black;
     color: white;
@@ -356,7 +368,114 @@ header .contact:hover {
 
 .view-btn:hover {
     background-color: #372424;
-}
+} */
+
+
+
+
+.our-stories > h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .our-stories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #fff);
+  }
+  
+  .stories-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .small-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .story-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .story-card.large {
+    height: 100%;
+  }
+  
+  .story-image {
+    position: relative;
+    
+  }
+  
+  .story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .story-image .date {
+    /* position: absolute; */
+    mask-position: 100%;
+    top: 100px;
+    left: 10px;
+    background: #20c997;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+  .story-content {
+    padding: 20px;
+  }
+  
+  .story-content h2 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+  
+  .story-content p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .view-all {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .view-all:hover {
+    background: #444;
+  }
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
