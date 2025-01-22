@@ -16,6 +16,10 @@ main {
 
 }
 
+
+
+/* header */
+
 header {
     padding: 20px 10%;
     display: flex;
@@ -38,16 +42,20 @@ header nav a {
     margin: 0 15px;
     font-weight: 500;
 }
-.sky-blue{
+
+.sky-blue {
     color: #01ACFD;
 }
-.orange{
+
+.orange {
     color: orange;
 }
-.akasi{
+
+.akasi {
     color: #05D4DF;
 }
-.beguni{
+
+.beguni {
     color: #5D58EF;
 }
 
@@ -68,6 +76,10 @@ header .contact:hover {
 }
 
 
+
+
+/* hero */
+
 .hero-flex {
     display: flex;
     justify-content: space-between;
@@ -78,14 +90,12 @@ header .contact:hover {
 
 .hero-content {
     text-align: left;
-    margin-top: 120;
-    margin-bottom: 120;
-
 }
 
-.span1{
+.span1 {
     color: orange;
 }
+
 .span2 {
     color: #01ACFD;
 }
@@ -108,11 +118,10 @@ header .contact:hover {
 .hero-image img {
     max-width: 100%;
     height: 0 auto;
-    /* z-index: 1; */
 }
 
 .hero-content .Enroll-btn {
-    background-color:black;
+    background-color: black;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -123,6 +132,12 @@ header .contact:hover {
     background-color: #272525;
 }
 
+
+
+
+
+
+/* standard */
 .Standard {
     padding: 60px 10%;
     text-align: center;
@@ -130,7 +145,7 @@ header .contact:hover {
 
 .Standard h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .curriculum {
@@ -139,13 +154,47 @@ header .contact:hover {
     justify-content: center;
 }
 
+.card>p {
+    margin-bottom: 5px;
+}
+
 .curriculum .card {
-    background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card1 {
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(222, 245, 1, 0));
+}
+
+.card2 {
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(222, 245, 1, 0));
+}
+
+.card3 {
+    background: linear-gradient(to bottom, rgba(242, 232, 255, 1), rgba(222, 245, 1, 0));
+}
+
+.card-link {
+    text-decoration: none;
+    /* margin-top:99%; */
+    /* align-items:flex-end; */
+    margin-bottom: 5px;
+}
+
+.link1 {
+    color: #64C8FF;
+}
+
+.link2 {
+    color: #F0AA00;
+}
+
+.link3 {
+    color: #8700FF;
 }
 
 .curriculum .card img {
@@ -157,12 +206,15 @@ header .contact:hover {
     margin-bottom: 10px;
 }
 
+
+
+
+
 /* tir-btn took help of google*/
 .tir-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 20px 30px; */
     gap: 5px;
     padding: 60px 10%;
 }
@@ -201,6 +253,7 @@ header .contact:hover {
     padding: 50px 20px;
     background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(254, 163, 1, 0));
     color: white;
+    
 }
 
 .story-title {
@@ -320,7 +373,7 @@ footer .container {
     align-items: center;
     /* max-width: 1200px; */
 
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .nicher {
