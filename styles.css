@@ -76,38 +76,26 @@ header .contact:hover {
 }
 
 .topnav {
-    background-color: #322222;
+    color: #000;
     overflow: hidden;
     border-radius: 5px;
 }
 
 .topnav a {
     float: left;
-    display: block;
-    color: #f2f2f2;
-    padding: 14px 16px;
+    color: black;
+    padding: 6px 6px; 
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(69, 64, 64);
 }
 
-/* Add an active class to highlight the current page */
-/* .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  } */
 
 .topnav .icon {
     display: none;
 }
-
-
-
-
-
 
 
 /* hero */
