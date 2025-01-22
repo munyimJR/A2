@@ -37,6 +37,10 @@ header .logo img {
     width: 50px;
 }
 
+header nav {
+    text-align: center;
+}
+
 header nav a {
     text-decoration: none;
     margin: 0 15px;
@@ -200,8 +204,6 @@ header .contact:hover {
 
 .card-link {
     text-decoration: none;
-    /* margin-top:99%; */
-    /* align-items:flex-end; */
     margin-bottom: 5px;
 }
 
@@ -287,9 +289,6 @@ header .contact:hover {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 20px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* align-items: start; */
 }
 
 .small-cards {
@@ -302,18 +301,21 @@ header .contact:hover {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* overflow: hidden; */
-
-    /* position:static; */
 }
 
 .story-card.large {
     height: 100%;
 }
 
+.large .story-image {
+    justify-items: left;
+}
+
 .story-image {
     position: relative;
     width: 100%;
+    /* justify-content: center; */
+    justify-items: center;
 }
 
 .story-image img {
@@ -333,6 +335,18 @@ header .contact:hover {
     font-size: small;
     border-radius: 15px;
     text-align: center;
+}
+
+.date1 {
+    background-color: #3CD8E8;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 15px;
+    text-align: center;
+
 }
 
 .story-content {
