@@ -441,6 +441,9 @@ footer {
 
 
 @media (max-width: 576px) {
+    header{
+        padding: 20px 10%;
+    }
     header nav a {
         display: none;
     }
