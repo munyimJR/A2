@@ -385,7 +385,6 @@ footer {
 .footer-description {
     margin-top: 10px;
     font-size: 0.6rem;
-    line-height: 1.6;
     color: #FFFFFF;
 }
 
@@ -397,17 +396,20 @@ footer {
 .nicher ul {
     list-style: none;
     padding: 20px 10%;
+    
 
 }
 
 .nicher ul li {
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .nicher ul li a {
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
+    text-align: left;
 }
 
 
@@ -419,16 +421,46 @@ footer {
 
 
 @media (max-width: 576px) {
-    .hero h1 {
+    .hero-flex{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
         font-size: 2rem;
+        text-align: center;
+    }
+    .hero-content > p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content .Enroll-btn{
+        margin: 20px auto;
     }
 
     header nav {
         display: none;
     }
+    .Standard{
+        justify-content: center;
+        align-items: center;
+    }
+    .curriculum {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 20px;
+        justify-content: center; */
+    }
 
-    footer .columns {
+    footer .foot-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
