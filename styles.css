@@ -3,7 +3,8 @@
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -248,87 +249,85 @@ header .contact:hover {
 
 /* our-stories */
 
-.our-stories > h1 {
+.our-stories>h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 0px;
     margin-bottom: 20px;
-  }
-  
-  .our-stories {
+}
+
+.our-stories {
     margin: 0 auto;
     padding: 20px;
     background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #fff);
-  }
-  
-  .stories-container {
+}
+
+.stories-container {
     padding: 60px 10%;
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 20px;
     align-items: start;
-  }
-  
-  .small-cards {
+}
+
+.small-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-  
-  .story-card {
+}
+
+.story-card {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
-  }
-  
-  .story-card.large {
+}
+
+.story-card.large {
     height: 100%;
-  }
-  
-  .story-image {
+}
+
+.story-image {
     position: relative;
-    
-  }
-  
-  .story-image img {
+
+}
+
+.story-image img {
     display: block;
     width: 100%;
     height: auto;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-  }
-  
-  .story-image .date {
-    /* position:static;  */
-    /* mask-position: 100%; */
-    /* top: 100px;
-    left: 10px; */
-    
+}
+
+.story-image .date {
     background: #20c997;
     color: white;
     padding: 5px 10px;
     font-size: 0.9rem;
     font-weight: bold;
     border-radius: 20px;
-  }
-  
-  .story-content {
+    position: relative;
+    top: -15;
+    text-align: center;
+}
+
+.story-content {
     padding: 20px;
-  }
-  
-  .story-content h2 {
+}
+
+.story-content h2 {
     font-size: 1rem;
     margin: 0 0 10px;
-  }
-  
-  .story-content p {
+}
+
+.story-content p {
     font-size: 0.9rem;
     color: #666;
-  }
-  
-  .view-all {
+}
+
+.view-all {
     display: block;
     margin: auto;
     padding: 10px 40px;
@@ -338,11 +337,11 @@ header .contact:hover {
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
-  }
-  
-  .view-all:hover {
+}
+
+.view-all:hover {
     background: #444;
-  }
+}
 
 
 
@@ -351,7 +350,6 @@ footer {
     background-color: #01ACFD;
     color: white;
     padding: 40px 20px;
-    /* text-align: center; */
 }
 
 .foot-container {
@@ -396,7 +394,7 @@ footer {
 .nicher ul {
     list-style: none;
     padding: 20px 10%;
-    
+    text-align: left;
 
 }
 
@@ -405,7 +403,7 @@ footer {
     text-align: left;
 }
 
-.nicher ul li a {
+.links ul li a {
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
@@ -421,46 +419,49 @@ footer {
 
 
 @media (max-width: 576px) {
-    .hero-flex{
+    header nav {
+        display: none;
+    }
+
+    .hero-flex {
         flex-direction: column-reverse;
         text-align: center;
     }
-    
+
     .hero-content h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .hero-content > p {
+
+    .hero-content>p {
         max-width: 100%;
         text-align: center;
     }
-    .hero-content{
+
+    .hero-content {
         text-align: center;
     }
-    .hero-content .Enroll-btn{
+
+    .hero-content .Enroll-btn {
         margin: 20px auto;
     }
 
-    header nav {
-        display: none;
-    }
-    .Standard{
-        justify-content: center;
-        align-items: center;
-    }
     .curriculum {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        /* gap: 20px;
-        justify-content: center; */
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto;
+    }
+
+    .stories-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stories-container .story-card.large {
+        display: none;
     }
 
     footer .foot-container {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
