@@ -179,11 +179,12 @@ header .contact:hover {
 }
 
 .card>p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .curriculum .card {
     width: 100%;
+    height: auto;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -205,6 +206,8 @@ header .contact:hover {
 .card-link {
     text-decoration: none;
     margin-bottom: 5px;
+    font-weight: bold;
+
 }
 
 .link1 {
@@ -398,7 +401,7 @@ footer {
 }
 
 .nicher {
-    margin: 10px;
+    margin: 5px;
     text-align: left;
 }
 
@@ -413,27 +416,26 @@ footer {
 .footer-logo img {
     width: 72px;
     height: 65px;
-    margin: 0;
+    /* margin: 0; */
     background-color: white;
     border-radius: 10px 10px 10px 10px;
 }
 
 .footer-description {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 0.6rem;
     color: #FFFFFF;
 }
 
 .nicher h4 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    /* margin-bottom: 0px; */
 }
 
 .nicher ul {
     list-style: none;
     padding: 20px 10%;
     text-align: left;
-
 }
 
 .nicher ul li {
@@ -452,7 +454,7 @@ footer {
 .social-icons {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 
